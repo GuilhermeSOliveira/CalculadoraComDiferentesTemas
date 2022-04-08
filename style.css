@@ -25,7 +25,7 @@ p {
     display: inline-block;
 }
 
-.screen {
+.divScreen {
     width: 600px;
     height: 100px;
     border: none;
@@ -37,6 +37,10 @@ p {
     color: #FFF;
 }
 
+.screen {
+    margin: 4% 0;
+}
+
 .botoes {
     width: 600px;
     height: 450px;
@@ -45,7 +49,7 @@ p {
     border-radius: 10px;
 }
 
-.numeros, .sinais {
+.numerosESinais {
     background-color: hsl(30, 25%, 89%);
     box-shadow: 0 4px hsl(28, 16%, 65%);
     font-family: 'Spartan', sans-serif;
@@ -72,7 +76,7 @@ p {
     color: #FFF;
 }
 
-.numeros, .sinais, .del {
+.numerosESinais, .del {
     width: 120px;
     height: 60px;
     margin: 2%;
@@ -84,7 +88,7 @@ p {
     margin: 2% 4%;
 }
 
-.numeros, .sinais, .del, .reset, .igual {
+.numerosESinais, .del, .reset, .igual {
     border-radius: 10px;
     border: none;
     font-weight: 700;

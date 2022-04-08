@@ -1,16 +1,34 @@
 let tela = document.querySelector('.screen');
-let numeros = document.querySelectorAll('.numeros');
-let sinais = document.querySelectorAll('.sinais');
+let numerosESinais = document.querySelectorAll('.numerosESinais');
 let igual = document.querySelector('.igual');
 let reset = document.querySelector('.reset');
 let del = document.querySelector('.del');
 
-for (let i = 0; i < numeros.length; i++) {
+for (let i = 0; i < numerosESinais.length; i++) {
     
-    let valor = numeros[i];
+    let valor = numerosESinais[i];
     
     
     valor.onclick = function () {
-        tela.innerHTML = numeros[i].value;
+        var inserir = tela.innerHTML;
+        tela.innerHTML = inserir + numerosESinais[i].value;
+    }
+
+    del.onclick = function () {
+        let apagar = tela.innerHTML;
+        tela.innerHTML = apagar.substring(0, apagar.length -1);
+    }
+
+    reset.onclick = function () {
+        let limpar = tela.innerHTML;
+        tela.innerHTML = limpar.substring(limpar.length);
+    }
+
+    igual.onclick = function () {
+        let resultado = tela.innerHTML;
+        if(resultado){
+            tela.innerHTML = eval(resultado);
+        }
     }
 }
+
