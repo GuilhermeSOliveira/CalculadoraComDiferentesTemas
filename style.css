@@ -16,66 +16,22 @@ h1 {
 
 p {
     display: inline-block;
-    margin-left: 60%;
+    margin-left: 30%;
     margin-bottom: 50px;
     color: #FFF;
 }
 
-.switch {
-    position: relative;
-    float: left;
-    height: 45px;
-    width: 90px;
-}
-
-.switch input[type=checkbox]{
-    visibility: hidden;
-}
-
-.switch {
-    position: absolute;
-    top: 120px;
-    left: 1450px;
-    width: 40px;
-    height: 50px;
-    background-color: #999;
-    border-radius: 14px;
-}
-
-.slider {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 90px;
-    height: 25px;
-    background-color: #999;
-    border-radius: 14px;
-}
-
-.switch, .slider:after {
-    content: "";
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -3;
-    left: -1;
-    background-color: #FFF;
-    box-shadow: 2px 2px 9px 0 #999;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.switch input:checked + .slider {
-    background: green;
-}
-
-.switch input:checked + .slider::after {
-    transform: translateX(30px);
-}
-
 .tema {
+    margin-left: 5%;
     display: inline-block;
+}
+
+.temas {
+    font-family: 'Spartan', sans-serif;
+    background-color: hsl(225, 21%, 49%);
+    color: #FFF;
+    border: none;
+    box-shadow: 2px 2px 2px hsl(224, 28%, 35%);
 }
 
 .divScreen {
@@ -148,13 +104,25 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+   
+    p {
+        margin-left: 30%;
+    }
     
+    .tema {
+        display: inline-block;
+        width: 80px;
+    }
+   
     .calculadora, .divScreen, .botoes {
-        width: 100%;
+        width: 90%;
+    }
+    .divScreen {
+        margin-left: 5%;
     }
 
     .botoes {
-        width: 100%;
+        width: 90%;
     }
 
     .numerosESinais, .del {
